@@ -59,7 +59,7 @@ function getItemById(items, id) {
 function getItemPriceByName(items, name) {
   // TODO: use a loop!
   for (let i = 0; i < items.length - 1; i++) {
-    if (item[i].name == name) {
+    if (items[i].name == name) {
       return item[i].price;
     }
   }
