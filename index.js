@@ -73,6 +73,7 @@ function getItemPriceByName(items, name) {
  */
 function getItemsByCategory(items, category) {
   // TODO: use `filter`
+  return items.filter((item) => item.category == category);
 }
 
 /**
@@ -81,6 +82,7 @@ function getItemsByCategory(items, category) {
  */
 function countItems(items) {
   // TODO: use `reduce`
+  return items.reduce((sum, item) => sum + item.quantity, 0);
 }
 
 /**
@@ -89,6 +91,7 @@ function countItems(items) {
  */
 function getTotalPrice(items) {
   // TODO: use `reduce`
+  return items.reduce((cost, item) => cost + item.quantity * item.price, 0);
 }
 
 // === READ BUT DO NOT CHANGE THE CODE BELOW ===
